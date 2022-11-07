@@ -11,11 +11,7 @@ class RandomChar extends Component {
     }
 
     state = {
-        name: null,
-        description: null,
-        thumbnail: null,
-        homepage: null,
-        wiki: null,
+        char: {},
     }
 
     marvelService = new MarvelService();
@@ -23,10 +19,12 @@ class RandomChar extends Component {
     updateChar = () => {
         const id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000);
         this.marvelService
-            .getCharacter(id)
-            .then(res => {
-                this.setState(res);
-            });
+            .getAllCharacters()
+            .then(res => console.log(res));
+        // .getCharacter(id)
+        // .then(res => {
+        //     this.setState(res);
+        // });
     }
 
     render() {
