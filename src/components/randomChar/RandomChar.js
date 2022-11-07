@@ -11,7 +11,7 @@ class RandomChar extends Component {
     }
 
     state = {
-        char: {},
+        char: {}
     }
 
     marvelService = new MarvelService();
