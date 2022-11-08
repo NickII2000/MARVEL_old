@@ -32,7 +32,7 @@ class RandomChar extends Component {
     }
 
     render() {
-        const { char: { name, description, thumbnail, homepage, wiki }, loading } = this.state;
+        const { char, loading } = this.state;
 
         if (loading) {
             return <Spinner />;
@@ -40,7 +40,7 @@ class RandomChar extends Component {
 
         return (
             <div className="randomchar" >
-
+                {loading ? <Spinner /> : <View char={char} />}
                 <div className="randomchar__static">
                     <p className="randomchar__title">
                         Random character for today!<br />
