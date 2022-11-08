@@ -30,7 +30,7 @@ class RandomChar extends Component {
     onError = () => {
         this.setState({
             loading: false,
-            erroe: true,
+            error: true,
         });
     }
 
