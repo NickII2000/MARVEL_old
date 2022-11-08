@@ -34,10 +34,6 @@ class RandomChar extends Component {
     render() {
         const { char, loading } = this.state;
 
-        if (loading) {
-            return <Spinner />;
-        }
-
         return (
             <div className="randomchar" >
                 {loading ? <Spinner /> : <View char={char} />}
