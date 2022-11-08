@@ -17,6 +17,8 @@ class RandomChar extends Component {
     marvelService = new MarvelService();
 
     onChatLoaded = (char) => {
+        console.log(char);
+        console.log({ char });
         this.setState({ char });
     }
 
