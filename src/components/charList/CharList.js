@@ -24,6 +24,7 @@ class CharList extends Component {
     onCharListLoaded = (charList) => {
         this.setState({
             charList,
+            error: false,
             loading: false
         })
     }
