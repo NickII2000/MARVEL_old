@@ -1,8 +1,21 @@
 import { Component } from "react";
+import MarvelService from '../../services/MarvelService';
+
 import './charInfo.scss';
 import thor from '../../resources/img/thor.jpeg';
 
 class CharInfo extends Component {
+
+    state = {
+        char: {},
+        loading: true,
+        error: false
+    }
+
+    marvelService = new MarvelService();
+
+
+
     render() {
         return (
             <div className="char__info">
