@@ -65,9 +65,9 @@ class CharInfo extends Component {
     render() {
         const { char, loading, error } = this.state;
 
-        console.log(char);
-        console.log(loading);
-        console.log(error);
+        // console.log(char);
+        // console.log(loading);
+        // console.log(error);
 
         const sceleton = char || loading || error ? null : <Sceleton />;
         const errorMessage = error ? <ErrorMessage /> : null;
