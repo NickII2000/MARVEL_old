@@ -10,9 +10,9 @@ import thor from '../../resources/img/thor.jpeg';
 class CharInfo extends Component {
 
     state = {
-        char: {},
+        char: null,
         loading: false,
-        error: false
+        error: false,
     }
 
     marvelService = new MarvelService();
@@ -59,6 +59,10 @@ class CharInfo extends Component {
 
     render() {
         const { char, loading, error } = this.state;
+
+        console.log(char);
+        console.log(loading);
+        console.log(error);
 
         const sceleton = char || loading || error ? null : <Sceleton />;
         const errorMessage = error ? <ErrorMessage /> : null;
