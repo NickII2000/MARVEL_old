@@ -5,7 +5,6 @@ import ErrorMessage from '../errorMessage/ErrorMessage';
 import Sceleton from '../skeleton/Skeleton'
 
 import './charInfo.scss';
-import thor from '../../resources/img/thor.jpeg';
 
 class CharInfo extends Component {
 
@@ -21,7 +20,7 @@ class CharInfo extends Component {
         this.updateChar();
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         if (this.props.charId !== prevProps.charId) {
             this.updateChar();
         }
@@ -88,10 +87,11 @@ class CharInfo extends Component {
 }
 
 const View = ({ char }) => {
+    const { name, description, thumbnail, homepage, wiki } = char;
     return (
         <>
             <div className="char__basics">
-                <img src={thor} alt="abyss" />
+                <img src={thumbnail} alt="abyss" />
                 <div>
                     <div className="char__info-name">thor</div>
                     <div className="char__btns">
