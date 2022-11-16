@@ -1,4 +1,4 @@
-import { Component } from "react/cjs/react.production.min";
+import { Component } from "react";
 
 class ErrorBoundary extends Component {
     state = {
@@ -21,3 +21,4 @@ class ErrorBoundary extends Component {
     }
 }
 
+export default ErrorBoundary;
