@@ -16,6 +16,8 @@ class RandomChar extends Component {
     marvelService = new MarvelService();
 
     componentDidMount() {
+        // ниже ошибка для проверки предохранителя:
+        this.foo.bar = 0;
         this.updateChar();
         // this.timerId = setInterval(this.updateChar, 1500);
     }
