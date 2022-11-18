@@ -17,7 +17,7 @@ class CharList extends Component {
 
     componentDidMount() {
         // ниже ошибка для проверки предохранителя:
-        this.foo.bar = 0;
+        // this.foo.bar = 0;
 
         this.marvelService.getAllCharacters()
             .then(this.onCharListLoaded)
