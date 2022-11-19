@@ -40,7 +40,7 @@ class CharInfo extends Component {
             .catch(this.onError);
 
         // ниже ошибка для проверки предохранителя:
-        // this.foo.bar = 0;
+        this.foo.bar = 0;
 
     };
 
