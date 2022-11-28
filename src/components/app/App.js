@@ -18,8 +18,6 @@ class App extends Component {
     //     })
     // }
 
-    onCharSelected = 210;
-
     render() {
         return (
             <div className="app">
