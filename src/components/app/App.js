@@ -136,6 +136,11 @@ const DynamicGreating = (props) => {
 function App() {
     return (
         <Wrapper>
+            <DynamicGreating color={'primary'}>
+                <h2>This weel was hard.</h2>
+                <h2>Hello world!</h2>
+            </DynamicGreating>
+
             <WhoAmI name='John' surname="Smith" link="ok.ru" />
             <WhoAmI name='Alex' surname="Shepard" link="vk.ru" />
         </Wrapper>
