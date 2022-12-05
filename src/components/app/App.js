@@ -128,7 +128,8 @@ const Wrapper = styled.div`
 const DynamicGreating = (props) => {
     return (
         <div className={'mb-3 p-3 border-' + props.color} className={'mb-3 p-3 border-' + props.color} >
-            {props.children}
+            {/* {props.children} */}
+
         </div >
     )
 
