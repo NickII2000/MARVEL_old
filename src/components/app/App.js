@@ -42,6 +42,7 @@ import { Component } from "react";
 // }
 
 import styled from 'styled-components';
+import BootstrapTest from './BootstrapTest';
 
 const EmpItem = styled.div`
     padding: 20px;
