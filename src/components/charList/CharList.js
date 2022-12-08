@@ -67,7 +67,7 @@ class CharList extends Component {
 
     setRef = (ref) => {
         this.itemRefs.push(ref);
-        console.log(this.itemRefs);
+        // console.log(this.itemRefs);
     }
 
     focusOnItem = (id) => {
