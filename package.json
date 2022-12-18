@@ -41,5 +41,6 @@
   },
   "devDependencies": {
     "sass": "^1.38.0"
-  }
+  },
+  "homepage": "https://github.com/NickII2000/MARVEL"
 }
